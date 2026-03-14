@@ -3,5 +3,5 @@ __pycache__
 *.pyo
 .env
 tests/
-alembic/
+alembic/versions/__pycache__
 .ruff_cache
