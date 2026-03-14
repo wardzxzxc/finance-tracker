@@ -1,0 +1,47 @@
+/* ── Typography ─────────────────────────────────────────────────────────────
+   Syne (geometric display with unusual weight) + DM Sans (legible, humanist)
+   Both from Google Fonts via @import
+   ────────────────────────────────────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap");
+
+/* ── Design tokens ──────────────────────────────────────────────────────────
+   Dark theme — Ink & Amber: deep ink backgrounds, warm amber accent
+   Inspired by IDE themes like Tokyo Night crossed with a ledger book
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* -- Surfaces -- */
+  --color-bg: #0d0f14;
+  --color-surface: #151820;
+  --color-surface-raised: #1c2030;
+  --color-border: rgba(255, 255, 255, 0.07);
+
+  /* -- Text -- */
+  --color-text: #e8e8f0;
+  --color-muted: #7a7d9c;
+  --color-subtle: #4a4d6a;
+
+  /* -- Accent: warm amber / gold -- */
+  --color-accent: #f5a623;
+  --color-accent-dim: rgba(245, 166, 35, 0.15);
+  --color-accent-fg: #0d0f14;
+
+  /* -- Semantic -- */
+  --color-success: #3ddc84;
+  --color-danger: #ff5f7e;
+
+  /* -- Typography -- */
+  --font-heading: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* -- Motion -- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 280ms;
+  --duration-slow: 500ms;
+
+  /* -- Radius -- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}

@@ -1,19 +1,11 @@
-import { useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import DashboardPage from "./pages/DashboardPage";
 
 export default function App() {
-  const [status, setStatus] = useState<string>("checking...");
-
-  useEffect(() => {
-    fetch("/api/health")
-      .then((r) => r.json())
-      .then((d) => setStatus(d.status))
-      .catch(() => setStatus("unreachable"));
-  }, []);
-
   return (
-    <div style={{ fontFamily: "sans-serif", padding: "2rem" }}>
-      <h1>Finance Tracker</h1>
-      <p>Backend: <strong>{status}</strong></p>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigate to="/dashboard" replace />} />
+      <Route path="/dashboard" element={<DashboardPage />} />
+    </Routes>
   );
 }
