@@ -1,6 +1,6 @@
 """initial schema
 
-Revision ID: 20260314_initial_schema
+Revision ID: 45e8d0905b65
 Revises:
 Create Date: 2026-03-14
 
@@ -10,7 +10,7 @@ from typing import Sequence, Union
 import sqlalchemy as sa
 from alembic import op
 
-revision: str = "20260314_initial_schema"
+revision: str = "45e8d0905b65"
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
