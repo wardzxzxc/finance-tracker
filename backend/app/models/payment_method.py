@@ -23,6 +23,7 @@ class PaymentMethod(Base):
         server_default=func.gen_random_uuid(),
     )
     name: Mapped[str] = mapped_column(String(100), unique=True, nullable=False)
+    color: Mapped[str | None] = mapped_column(String(7))
     type: Mapped[PaymentMethodType] = mapped_column(
         sa.Enum(PaymentMethodType, name="payment_method_type"),
         nullable=False,
